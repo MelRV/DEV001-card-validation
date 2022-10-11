@@ -5,30 +5,12 @@ const validator = {
      //mostrar el arreglo en la consola
      //console.log("el arreglo es" + arreglo);
      // convertir el string en entero con parseInt
-     const arrOfNum = arreglo.map(str => { //map retorna un array nuevo
-       return Number(str);
-     });
-     //mostrar en consola
-     //console.log("en arreglo es" + arrOfNum);
-     //variable para el lugar
-     let resultado = 0;
-     for (let i = 0; i < arrOfNum.length; i++) {
-      var numero = (arrOfNum[i]);
-      if (i % 2 === 0){
-        numero *= 2;
-        if (numero > 9){
-          numero -= 9;
-        }
-      }
-      resultado += numero;
-      //console.log (resultado);
-    }
-    if (resultado % 10 === 0){
-      //alert ("es valida");
-    } else {
-     // alert ("no es valida");
-    }
-    return resultado % 10 === 0; // AÑADIDO!!!
+     let arrOfNum = arreglo.reverse().map(x => parseInt(x));
+     let lastDigit = arrOfNum.splice(0, 1)[0];
+  let sum = arrOfNum.reduce((acc, val, i) => (i % 2 !== 0 ? acc + val : acc + ((val * 2) % 9) || 9), 0);
+  sum += lastDigit;
+  return sum % 10 === 0;
+   
   },
   maskify : function (creditCardNumber){
     var largo = creditCardNumber.length;

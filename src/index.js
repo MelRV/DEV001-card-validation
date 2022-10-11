@@ -29,7 +29,7 @@ document.getElementById("validar").addEventListener("click",function (event) {
         // Si es valida entonces alert success sino alert error
         let creditCardNumber = document.getElementById("inputNumero").value;
         let esValida = validator.isValid(creditCardNumber);
-        if (esValida === true){
+        if (esValida == true){
             alert ("Yahoo! Ya tienes tus boletos para Bad Bunny");
         } else {
             alert ("Verifica tus datos de nuevo");

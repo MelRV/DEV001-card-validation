@@ -2,14 +2,13 @@
 
 ## Índice
 
-* [1. Resumen del proyecto](#1-resumen-del-proyecto)
+* [1. Resumen ](#1-resumen)
 * [2. Imagenes del proyecto](#2-imagenes-del-proyecto)
-* [3.Imagenes del código](#3-imagenes-del-código)
-* [4. Consideraciones generales](#4-consideraciones-generales)
+
 
 ***
 
-## 1. Resumen del proyecto
+## 1. Resumen
 
 Este proyecto es una simulación de la pantalla de pago para unos boletos de concierto, se creo una función `isValid` para corroborar que 
 la tarjeta que se ingresa es valida o invalida, usando el algoritmo de Luhn.
@@ -17,13 +16,14 @@ Además se creola función `Maskify` para enmascarar los digitos de nuestro núm
 
 ## 2. Imagenes del proyecto
 
+Esta es la imagen final en desktop , cuenta con cajas para ingresar los datos de Nombre,número de tarjeta y los select para los datos de año y mes
+
+![image text](https://github.com/MelRV/DEV001-card-validation/blob/main/Screen%20Shot%202022-10-12%20at%2018.25.20.png)
 
 
 
 
-## 3. Imagenes del código
 
 
-## 4. Consideraciones generales
 
 

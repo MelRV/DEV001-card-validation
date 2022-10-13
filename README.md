@@ -11,8 +11,8 @@
 ## 1. Resumen
 
 Este proyecto es una simulación de la pantalla de pago para unos boletos de concierto, se creo una función `isValid` para corroborar que 
-la tarjeta que se ingresa es valida o invalida, usando el algoritmo de Luhn.
-Además se creola función `Maskify` para enmascarar los digitos de nuestro número de tarjeta con excepción de los últimos cuatro digitos.
+la tarjeta que se ingresa es valida o invalida, usando el `algoritmo de Luhn.
+Además se creo la función `Maskify` para enmascarar los digitos de nuestro número de tarjeta con excepción de los últimos cuatro digitos.
 
 ## 2. Imagenes del proyecto
 

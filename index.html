@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Paga aquí tu boletos para: Bad Bunny</h1>
+    <form action="test" id="formulario" class="formulario-tarjeta">
+      <div class="grupo claseletra">
+       <label for="inputNumero">Número de tarjeta</label>
+        <input type="text" id="inputNumero" maxlength="16" autocomplete="off" required>
+        <br>
+        <br>
+        <div class="grupo claseletra">
+          <label for="inputNombre">Nombre</label>
+          <input type="text" id="inputNombre" placeholder="Ej: Britney Spears" autocomplete="off" required>
+          <div clas="flexbox">
+            <div class="grupo expira">
+              <label for="selectMes">Expiración</label>
+              <div class="flexbox">
+                <div class="grupo-select">
+                  <select name="mes" id="selectMes">
+                    <option disabled selected>Mes</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <br>
+                <div class="grupo-select">
+                  <select name="year" id="selectYear">
+                    <option disabled selected>Año</option>
+                  </select>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="grupo ccv"> 
+                  <label for="inputCCV">CCV</label>
+                  <input type="text" id="inputCCV" maxlength="3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form> 
+    <br>
+    <button type="submit" id="validar" class="btn-pagar">Pagar</button>
+  </div>
+  <header></header>
+  <main></main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+</html>

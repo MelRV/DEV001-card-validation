@@ -17,7 +17,7 @@ const validator = {
           numero -= 9;
          // debugger;
         } 
-      }n
+      }
       resultado += numero;
        //console.log (resultado);
      }
